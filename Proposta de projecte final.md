@@ -18,7 +18,7 @@ He escollit aquest project degua a que trobe que es necesari
 **4. Abast del projecte  
 Quines tecnologies i en quins mòdul està basat el projecte**
 React-API amb symfony-bootstrap i css-desplegament d'aplicació en un lloc web de hosting(encara no desidit).
-![[palette.svg]]
+![paleta de colores](palette.svg)
 Paleta de colores orden de esquerra a dreta:
 1. 2b2d42
 2. 8d99ae
