@@ -27,4 +27,4 @@ Paleta de colores orden de esquerra a dreta:
 5. d90429
 
 Data: 13/09/2022
-Signat: 
+Signat: Hola
