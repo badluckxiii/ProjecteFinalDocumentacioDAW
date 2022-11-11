@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20231005T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20221005" type="day-type" id="0"/>
+      </days>
+      <calendar id="2" name="Work">
+        <default-week mon="2" tue="2" wed="2" thu="2" fri="2" sat="2" sun="2"/>
+        <overridden-day-types/>
+        <days/>
+      </calendar>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Planificaci&#xF3;n" note="" work="58500" start="20231005T000000Z" end="20231009T081500Z" work-start="20231005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Maquetar base de dades" note="" work="8100" start="20231005T000000Z" end="20231005T101500Z" work-start="20231005T080000Z" percent-complete="95" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Entrevista a clientes potenciales" note="" work="10800" start="20231005T101500Z" end="20231005T141500Z" work-start="20231005T101500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="4" name="Diagrama de grad" note="" work="18000" start="20231005T141500Z" end="20231006T101500Z" work-start="20231005T141500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="5" name="Pensar requisitos t&#xE9;cnicos a partir de los datos de la entrevista" note="" work="7200" start="20231006T101500Z" end="20231006T131500Z" work-start="20231006T101500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="4" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="6" name="Pensar base de datos a partir del proyecto" note="" work="7200" start="20231006T131500Z" end="20231006T151500Z" work-start="20231006T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="5" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="7" name="Pensar diagramas de flujo" note="" work="7200" start="20231006T151500Z" end="20231009T081500Z" work-start="20231006T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="8" name="Maquetacion" note="" work="54000" start="20231009T081500Z" end="20231010T161500Z" work-start="20231009T081500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
+      <task id="9" name="Mirar refenrencia para mock ups" note="" work="3600" start="20231009T081500Z" end="20231009T091500Z" work-start="20231009T081500Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="10" name="Hacer mock ups web" note="" work="21600" start="20231009T091500Z" end="20231009T161500Z" work-start="20231009T091500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="9" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="11" name="" note="" work="28800" start="20231009T161500Z" end="20231010T161500Z" work-start="20231009T161500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="10" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="12" name="Casos de uso" note="" work="28800" start="20231010T161500Z" end="20231011T161500Z" work-start="20231010T161500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="13" name="Crear api con symfony" note="" work="82800" start="20231010T161500Z" end="20231013T151500Z" work-start="20231010T161500Z" percent-complete="54" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="8" type="FS"/>
+      </predecessors>
+      <task id="14" name="Maquetar base de dades  amb symfony" note="" work="10800" start="20231010T161500Z" end="20231011T101500Z" work-start="20231010T161500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="15" name="CRUD videojuegos" note="" work="10800" start="20231011T101500Z" end="20231011T141500Z" work-start="20231011T101500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="14" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="16" name="CRUD generos" note="" work="10800" start="20231011T141500Z" end="20231012T081500Z" work-start="20231011T141500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="15" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="17" name="CRUD plataformas" note="" work="10800" start="20231012T081500Z" end="20231012T111500Z" work-start="20231012T081500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="18" name="CRUD usuarios" note="" work="10800" start="20231012T111500Z" end="20231012T151500Z" work-start="20231012T111500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="17" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="19" name="Busqueda" note="" work="7200" start="20231012T151500Z" end="20231013T081500Z" work-start="20231012T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="18" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="20" name="Login" note="" work="7200" start="20231013T081500Z" end="20231013T101500Z" work-start="20231013T081500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="19" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="21" name="Sing up" note="" work="7200" start="20231013T101500Z" end="20231013T131500Z" work-start="20231013T101500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="22" name="Bam" note="" work="7200" start="20231013T131500Z" end="20231013T151500Z" work-start="20231013T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="21" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="23" name="Seccion busqueda" note="" work="7200" start="20231013T151500Z" end="20231016T081500Z" work-start="20231013T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="22" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="24" name="Crear React App" note="" work="104400" start="20231013T151500Z" end="20231018T111500Z" work-start="20231013T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="13" type="FS"/>
+      </predecessors>
+      <task id="25" name="Llistar jocs" note="" work="10800" start="20231013T151500Z" end="20231016T091500Z" work-start="20231013T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="26" name="CRUD jocs" note="" work="18000" start="20231016T091500Z" end="20231016T151500Z" work-start="20231016T091500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="25" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="27" name="crud plataformes" note="" work="18000" start="20231016T151500Z" end="20231017T111500Z" work-start="20231016T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="26" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="28" name="crud generes" note="" work="18000" start="20231017T111500Z" end="20231018T081500Z" work-start="20231017T111500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="27" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="29" name="comentaris i votar jocs" note="" work="10800" start="20231018T081500Z" end="20231018T111500Z" work-start="20231018T081500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="28" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="30" name="" note="" work="28800" start="20231013T151500Z" end="20231016T151500Z" work-start="20231013T151500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="31" name="Login" note="" work="28800" start="20231018T111500Z" end="20231019T111500Z" work-start="20231018T111500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="29" type="FS"/>
+      </predecessors>
+      <task id="32" name="" note="" work="28800" start="20231018T111500Z" end="20231019T111500Z" work-start="20231018T111500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="33" name="crud generes" note="" work="28800" start="20231005T000000Z" end="20231005T170000Z" work-start="20231005T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Hosting hostinger" short-name="" type="1" units="0" email="" note="" std-rate="2.9900000095367432"/>
+    <resource id="2" name="Dominio " short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations/>
+</project>
